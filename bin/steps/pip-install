@@ -48,7 +48,7 @@ if [ ! "$SKIP_PIP_INSTALL" ]; then
     show-warnings
     
     echo "NYUTAL custom pip uninstall spacy"
-    /app/.heroku/python/bin/pip uninstall -y spacy
+    #/app/.heroku/python/bin/pip uninstall -y spacy
     
     echo "`du -hs /app/.heroku/python/lib/python3.6/site-packages/*`"
 
