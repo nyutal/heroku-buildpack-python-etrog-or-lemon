@@ -48,7 +48,7 @@ if [ ! "$SKIP_PIP_INSTALL" ]; then
     show-warnings
     
     echo "NYUTAL custom pip uninstall spacy"
-    /app/.heroku/python/bin/pip uninstall spacy
+    /app/.heroku/python/bin/pip uninstall -y spacy
 
     if [[ ! $PIP_STATUS -eq 0 ]]; then
         mcount "failure.pip-install"
